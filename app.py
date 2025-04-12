@@ -37,4 +37,4 @@ def convert_pdf_to_png():
         return f"변환 실패: {str(e)}", 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
