@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF → PNG 변환기</title>
+</head>
+<body>
+    <header>
+        <h1>PDF 파일을 PNG로 변환</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="upload-form" method="POST" action="/convert" enctype="multipart/form-data">
+                <label for="pdf-file">PDF 파일 선택:</label>
+                <input type="file" id="pdf-file" name="pdf_file" accept=".pdf" required>
+                
+                <button type="submit">변환하기</button>
+            </form>
+        </section>
+
+        <section id="result-section" style="display:none;">
+            <h2>변환된 이미지</h2>
+            <div id="image-preview">
+                <!-- 변환된 PNG 이미지가 여기에 표시됨 -->
+            </div>
+            <a id="download-link" href="#" download>PNG 다운로드</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PDF 변환기</p>
+    </footer>
+</body>
+</html>

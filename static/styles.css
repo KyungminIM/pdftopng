@@ -1,0 +1,96 @@
+/* 배경 전체 설정 */
+body {
+    background: linear-gradient(to bottom right, #e6e6fa, #fdf5e6);
+    font-family: 'Georgia', serif;
+    color: #2f2f4f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #b0c4de;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #4b0082;
+}
+
+/* 메인 콘텐츠 */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* 폼 섹션 */
+form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(173, 216, 230, 0.4);
+    text-align: center;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #add8e6;
+    color: #4b0082;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(100, 149, 237, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #87cefa;
+    transform: scale(1.05);
+}
+
+/* 결과 섹션 */
+#result-section {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(173, 216, 230, 0.4);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+#image-preview img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #dda0dd;
+    border-radius: 12px;
+}
+
+/* 다운로드 링크 */
+#download-link {
+    display: inline-block;
+    margin-top:
