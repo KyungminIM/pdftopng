@@ -1,7 +1,10 @@
+/* 구글 웹폰트: Poppins (영문), Noto Sans KR (한글) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
 /* 배경 전체 설정 */
 body {
     background: linear-gradient(to bottom right, #e6e6fa, #fdf5e6);
-    font-family: 'Georgia', serif;
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
     color: #2f2f4f;
     margin: 0;
     padding: 0;
@@ -45,14 +48,20 @@ form {
 label {
     font-size: 1.1em;
     font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
 input[type="file"] {
-    margin-top: 10px;
-    margin-bottom: 20px;
     font-size: 1em;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
+/* 변환 버튼 */
 button {
     background-color: #add8e6;
     color: #4b0082;
@@ -93,4 +102,28 @@ button:hover {
 /* 다운로드 링크 */
 #download-link {
     display: inline-block;
-    margin-top:
+    margin-top: 20px;
+    background-color: #f8e8ff;
+    padding: 10px 20px;
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(147, 112, 219, 0.3);
+    transition: all 0.3s ease;
+}
+
+#download-link:hover {
+    background-color: #e6ccff;
+    transform: scale(1.05);
+}
+
+/* 푸터 */
+footer {
+    background-color: #b0c4de;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #4b0082;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
